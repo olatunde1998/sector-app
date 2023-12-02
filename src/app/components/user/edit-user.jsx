@@ -160,7 +160,7 @@ export const EditUser = ({ editUserID, userDetails, setShowEditUser }) => {
                     placeholder="search"
                     onSelect={handleSelectSelector}
                     inputData={sectorsData}
-                    getSelectedSector={userDetails?.email}
+                    getSelectedSector={userDetails?.sector}
                   />
                   {!getSelectedSector && (
                     <p className="text-red-500 text-[0.7rem] text-left">
