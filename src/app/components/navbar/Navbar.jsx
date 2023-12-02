@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-import { EazipayIcon } from "../../../../assets/icons";
 import { BrandLogo } from "../brandLogo/brandLogo";
 
 const routes = [
