@@ -25,6 +25,7 @@ const schema = yup.object().shape({
     .min(6, "Phone number must be greater than 6 numbers")
     .max(12, "Phone number must be less than 12 numbers"),
   sector: yup.string().required("Sector is required"),
+  agreeTerms: yup.boolean().oneOf([true], "Agree Terms is required"),
 });
 
 const successNotifying = () => {
@@ -73,7 +74,9 @@ export default function Home() {
     handleSubmit,
     formState: { errors },
     register,
-  } = useForm({ resolver: yupResolver(schema) });
+  } = useForm(
+    { resolver: yupResolver(schema) },
+  );
 
   const handleSelectSelector = (item) => {
     setGetSelectedSector(item?.name);
@@ -88,7 +91,7 @@ export default function Home() {
       phoneNumber: data?.phoneNumber,
     };
     mutate(requestData);
-
+    setIsSaving(true);
     successNotifying();
   };
   return (
@@ -178,19 +181,19 @@ export default function Home() {
                 {errors?.phoneNumber?.message}
               </p>
             </div>
-            <div>
-              <div className="mb-4">
+            <div className="mb-4">
+              <div >
                 <input
                   type="checkbox"
                   label="Terms and Condition"
-                  inputName="agreeTerms"
-                  register={{ ...register("agreeTerms") }}
+                  name="agreeTerms"
+                  {...register("agreeTerms")}
                   placeholder=""
                 />
                 <span className="text-sm"> Agree Terms and Conditions</span>
               </div>
               <p className="text-red-500 text-[0.7rem] text-left">
-                {errors.agreeTerms?.message}
+                {errors?.agreeTerms?.message}
               </p>
             </div>
             <div className="flex justify-between pr-0 lg:justify-end  gap-6">
@@ -204,7 +207,7 @@ export default function Home() {
               </div>
               <button
                 disabled={isSaving}
-                className="text-[#10172A] bg-white justify-center flex rounded-md cursor-pointer w-[200px]  p-3 text-center items-center"
+                className="text-[#10172A] bg-white justify-center flex rounded-md cursor-pointer w-[200px]  p-3 text-center items-center hover:bg-[#4e6a7c] hover:border-[#10172A] hover:border-[1.2px] hover:text-white"
               >
                 {isSaving ? "Saving..." : "Save"}
               </button>

@@ -194,7 +194,7 @@ export const EditUser = ({ editUserID, userDetails, setShowEditUser }) => {
               </div>
               <button
                 disabled={isSaving}
-                className="text-[#10172A] justify-center flex rounded-md bg-white cursor-pointer w-[200px]  p-3 text-center items-center"
+                className="text-[#10172A] justify-center flex rounded-md bg-white cursor-pointer w-[200px]  p-3 text-center items-center hover:bg-[#4e6a7c] hover:border-[#10172A] hover:border-[1.2px] hover:text-white"
               >
                 {isSaving ? "Saving..." : "Save"}
               </button>
