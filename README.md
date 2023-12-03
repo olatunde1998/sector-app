@@ -22,7 +22,7 @@
 $ git clone [https://github.com/olatunde1998/sector-app](https://github.com/olatunde1998/sector-app)
 
 2. Change directory into the cloned folder and run the setup script
-$ cd online-learning-app
+$ cd sector-app
 
 3. Open your terminal and type this command `yarn install ` or `npm install` to add the react dependency to the app in the development mode.
 
