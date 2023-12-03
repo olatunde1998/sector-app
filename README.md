@@ -19,7 +19,7 @@
 # How to Contribute
 
 1. Clone the repository 
-$ git clone [https://github.com/RuchiDeve/sector-app](https://github.com/RuchiDeve/sector-app)
+$ git clone [https://github.com/olatunde1998/sector-app](https://github.com/olatunde1998/sector-app)
 
 2. Change directory into the cloned folder and run the setup script
 $ cd online-learning-app
@@ -36,7 +36,7 @@ Vercel was used to deploy the app.
  + [Vercel](https://vercel.com/dashboard)
 
 # License
-The MIT License - Copyright (c) 2023 - Present, uruchi/  Storage Service.
+The MIT License - Copyright (c) 2023 - Present, geodevcode/  Storage Service.
 
 # Author
 Rasheed Olatunde (Full Stack Developer)
