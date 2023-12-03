@@ -4,26 +4,10 @@
 <hr />
 </div>
 
-Hello, 👋 \
-Sector Web Application allows user to perform any CRUD operation.
-
-Here's some notes about my submission:
-
-1. A link to the project repository   https://github.com/RuchiDeve/sector-app
-
-2. A publicly live hosted URL of the challenge  https://uruchi-sector-app.vercel.app/
-
-Thank you very much.
-
-Best regards,\
-Uruchi Okezie
-
 # Technologies 
 
- + [Typescript](https://www.typescriptlang.org/) 
  + [JavaScript](https://javascript.info/) 
  + [NextJs](https://nextjs.org/)
- + [Vercel](https://vercel.com/dashboard) 
  + [React Hook-form](https://react-hook-form.com/) 
  + [TailwindCss](https://tailwindcss.com/) 
 
@@ -55,4 +39,4 @@ Vercel was used to deploy the app.
 The MIT License - Copyright (c) 2023 - Present, uruchi/  Storage Service.
 
 # Author
-Uruchi Okezie (Full Stack Developer)
+Rasheed Olatunde (Full Stack Developer)
