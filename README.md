@@ -36,7 +36,7 @@ Vercel was used to deploy the app.
  + [Vercel](https://vercel.com/dashboard)
 
 # License
-The MIT License - Copyright (c) 2023 - Present, geodevcode/  Storage Service.
+The MIT License - Copyright (c) 2023 - Present, geodevcodes/  Storage Service.
 
 # Author
 Rasheed Olatunde (Full Stack Developer)
